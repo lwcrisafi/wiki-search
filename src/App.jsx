@@ -9,7 +9,7 @@ function App() {
   const [searchResults, setSearchResults] = useState([]); // step 3
   const [loading, setLoading] = useState(false);
   const [offset, setOffset] = useState(0); //new state for offset
-  const resultsPerPage = 10; //number of results per page
+  // const resultsPerPage = 10; //number of results per page
 
   //step 2: implement fetchData to fetch data from api
   const fetchData = async () => {
