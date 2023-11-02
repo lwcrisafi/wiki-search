@@ -1,0 +1,48 @@
+div {
+  text-align: center;
+  margin: 100px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border: 2em solid lightcoral;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff00bb;
+  color: #fb05a0;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(159, 214, 245);
+}
+
+/* Styling for the SearchResults component */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

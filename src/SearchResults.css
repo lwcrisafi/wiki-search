@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fab3b3;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: #ff0080;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
