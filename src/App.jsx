@@ -33,24 +33,23 @@ function App() {
     fetchData();
   };
 
-  //increment offset
-  const handleNext = () => {
-    if (searchQuery) {
-      setOffset((prevOffset) => prevOffset + resultsPerPage);
-    }
-  };
-  //decrease the offset
-  const handlePrev = () => {
-    if (searchQuery && offset >= resultsPerPage) {
-      setOffset((prevOffset) => prevOffset - resultsPerPage);
-    }
-  };
   //new useEffect to fetch data when the offset changes
   useEffect(() => {
-    if (searchQuery || offset !== 0) {
+    if (offset > 0) {
       fetchData();
     }
-  }, [ searchQuery, offset]);
+  }, [offset]);
+
+  //increment offset by 10
+  const handleNext = () => {
+    setOffset((prevOffset) => prevOffset + 10);
+  };
+  //decrease the offset by 10
+  const handlePrev = () => {
+    if (offset >= 10) { 
+    setOffset((prevOffset) => prevOffset - 10);
+    }
+  };
 
   return (
     <div>
